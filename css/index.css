@@ -1,70 +1,71 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 
-*
-{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 
-html,body
-{
-    height: 100%;
-    width: 100%;
-    background-color: #222831;
+html,
+body {
+	height: 100%;
+	width: 100%;
+	background-color: #222831;
 }
 
-h1
-{
-    text-align: center;
-    font-family: 'Poppins', sans-serif;
-    background-color: #47E4BB;
-    line-height: 4rem;
-    color: black;
+h1 {
+	position: fixed;
+	width: 100%;
+	text-align: center;
+	font-family: 'Poppins', sans-serif;
+	background-color: #47e4bb;
+	line-height: 4rem;
+	color: black;
+	top: 0;
+	left: 0;
 }
 
-.all_image
-{
-    display: grid;
-    grid-template-columns: repeat(3,minmax(20%,1fr));
+.all_image {
+	display: grid;
+	grid-template-columns: repeat(3, minmax(20%, 1fr));
+	margin-top: 5rem;
+	padding-bottom: 5rem;
 }
 
-.img
-{
-    margin: 1.5rem;
+.img {
+	margin: 1.5rem;
 }
 
-img
-{
-    width: 100%;
-    border: 2px solid #47E4BB;
+img {
+	width: 100%;
+	border: 2px solid #47e4bb;
 }
 
-p
-{
-    font-family: 'Poppins', sans-serif;
-    background-color: #47E4BB;
-    text-align: center;
-    width: 50%;
-    display: block;
-    padding: 0.5rem;
-    margin: auto;
+p {
+	font-family: 'Poppins', sans-serif;
+	background-color: #47e4bb;
+	text-align: center;
+	width: 50%;
+	display: block;
+	padding: 0.5rem;
+	margin: auto;
 }
 
-footer
-{
-    display: flex;
-    justify-content: space-around;
+footer {
+	position: fixed;
+	display: flex;
+	justify-content: space-around;
+	left: 0;
+	bottom: 0;
+	width: 100%;
 }
 
-.thank_you
-{
-    font-weight: bold;
+.thank_you {
+	font-weight: bold;
 }
-footer p
-{
-    padding: 2rem;
-    width: 100%;
+footer p {
+	padding: 1.5rem;
+	width: 100%;
 }
 
 @media (max-width: 768px) and (min-width: 500px) {
@@ -80,8 +81,7 @@ footer p
 	.all_image {
 		grid-template-columns: repeat(1, minmax(200px, 1fr));
 	}
-    footer
-    {
-        flex-direction: column;
-    }
+	footer {
+		flex-direction: column;
+	}
 }
